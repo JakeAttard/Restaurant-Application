@@ -10,16 +10,16 @@
     </div>
     <ul class="links">
         <li>
-        <a href="/menu">Menu</a>
+        <a href="{{url('menu')}}">Menu</a>
         </li>
         <li>
-        <a href="/waitlist">Wait List</a>
+        <a href="{{url('waitlist')}}">Wait List</a>
         </li>
         <li>
-        <a href="/offers">Offers</a>
+        <a href="{{url('offers')}}">Offers</a>
         </li>
         <li>
-        <a href="/giftcards">Gift Cards</a>
+        <a href="{{url('giftcards')}}">Gift Cards</a>
         </li>
     </ul>
     </div>

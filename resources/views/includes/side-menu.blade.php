@@ -1,6 +1,6 @@
-<div class="welcome-menu">
+<div class="side-menu">
     <div class="logo">
-        <a href="/">
+        <a href="{{url('/')}}">
             <img src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-5.png" alt="Logo">
         </a>
     </div>
@@ -10,16 +10,19 @@
     </div>
     <ul class="links">
         <li>
-        <a href="{{url('menu')}}">Menu</a>
+            <a href="{{url('about')}}">About</a>
         </li>
         <li>
-        <a href="{{url('waitlist')}}">Wait List</a>
+            <a href="{{url('menu')}}">Menu</a>
         </li>
         <li>
-        <a href="{{url('offers')}}">Offers</a>
+            <a href="{{url('waitlist')}}">Wait List</a>
         </li>
         <li>
-        <a href="{{url('giftcards')}}">Gift Cards</a>
+            <a href="{{url('offers')}}">Offers</a>
+        </li>
+        <li>
+            <a href="{{url('giftcards')}}">Gift Cards</a>
         </li>
     </ul>
     </div>

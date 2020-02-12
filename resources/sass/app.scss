@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import "bootstrap.min.css";
 @import "reset";
 @import "home";
 @import "pages/about";
-
 
 body {
   line-height: 1;
@@ -25,6 +26,10 @@ q:after,
 q:before {
   content: '';
   content: none;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 table {
@@ -131,6 +136,15 @@ body {
           }
       }
   }
+
+  #content-section {
+    max-width: calc(100vw - 350px);
+    background: #ED4852;
+    background: -moz-radial-gradient(center, ellipse cover, #ED4852 0%, #9C1B24 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ED4852 0%, #9C1B24 100%);
+    background: radial-gradient(ellipse at center, #ED4852 0%, #9C1B24 100%);
+    overflow: hidden;
+  }  
 }
 
 #information {

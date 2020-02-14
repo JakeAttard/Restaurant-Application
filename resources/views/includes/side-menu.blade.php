@@ -21,9 +21,6 @@
         <li>
             <a href="{{url('offers')}}">Offers</a>
         </li>
-        <li>
-            <a href="{{url('giftcards')}}">Gift Cards</a>
-        </li>
     </ul>
     </div>
 

@@ -326,6 +326,42 @@ table {
   }
 }
 
+#menu-page {
+  padding: 100px;
+}
+
+#menu-page #food-preview {
+  padding: 0;
+  background: transparent;
+}
+
+#menu-page #food-preview h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#menu-page #food-preview .right-btn,
+#menu-page #food-preview .left-btn {
+  background: black;
+}
+
+#menu-page #food-preview .food-slider .slide:hover .background {
+  background: black;
+  transform: translate3d(0, -250px, 0);
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #menu-page {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #menu-page {
+    padding: 20px;
+  }
+}
+
 body {
   line-height: 1;
   background: white;
@@ -456,7 +492,6 @@ body {
   max-width: calc(100vw - 300px);
   background: #ED4852;
   background: radial-gradient(ellipse at center, #ED4852 0%, #9C1B24 100%);
-  overflow: hidden;
 }
 
 #information {

@@ -6,6 +6,7 @@
 @import "pages/about";
 @import "pages/waitlist";
 @import "pages/offers";
+@import "menu/index";
 
 body {
   line-height: 1;
@@ -148,7 +149,6 @@ body {
     background: -moz-radial-gradient(center, ellipse cover, #ED4852 0%, #9C1B24 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #ED4852 0%, #9C1B24 100%);
     background: radial-gradient(ellipse at center, #ED4852 0%, #9C1B24 100%);
-    overflow: hidden;
   }  
 }
 

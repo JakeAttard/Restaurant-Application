@@ -6,14 +6,14 @@
     </div>
     <div class="menu">
     <div class="menu-title">
-        Menu
+        Jakes Burgers
     </div>
     <ul class="links">
         <li>
-            <a href="{{url('about')}}">About</a>
+            <a href="{{url('menu')}}">Menu</a>
         </li>
         <li>
-            <a href="{{url('menu')}}">Menu</a>
+            <a href="{{url('about')}}">About</a>
         </li>
         <li>
             <a href="{{url('waitlist')}}">Wait List</a>

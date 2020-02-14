@@ -21,7 +21,7 @@
       
             <div class="welcome-jumbo">
               <div class="status">NEW</div>
-              <h1>Billy Burger</h1>
+              <h1>Jakes Burgers</h1>
               <img src="img/billyBurgerImg.png" class="burger-fries" alt="">
             </div>
             </section>

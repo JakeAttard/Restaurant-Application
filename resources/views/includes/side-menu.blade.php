@@ -16,10 +16,13 @@
             <a href="{{url('about')}}">About</a>
         </li>
         <li>
-            <a href="{{url('waitlist')}}">Wait List</a>
+            <a href="{{url('reservations')}}">Reservations</a>
         </li>
         <li>
             <a href="{{url('offers')}}">Offers</a>
+        </li>
+        <li>
+            <a href="{{url('contact')}}">Contact Us</a>
         </li>
     </ul>
     </div>

@@ -69,4 +69,10 @@ class UsersController extends Controller
 
         return redirect('/admin/users');
     }
+
+    public function delete($id) {
+        $user = User::find($id);
+        $user->delete();
+        return redirect('/admin/users');
+    }
 }

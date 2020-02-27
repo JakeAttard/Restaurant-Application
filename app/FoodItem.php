@@ -8,7 +8,11 @@ class FoodItem extends Model
 {
     protected $table = 'food_items';
 
-    public function foodCategory() {
+    protected $fillable = [
+        'title', 'description', 'image_url', 'price', 'category_id'
+    ];
+
+    public function categories() {
         return $this->belongsTo('App\FoodCategory');
     }
 }

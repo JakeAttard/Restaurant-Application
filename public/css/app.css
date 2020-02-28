@@ -289,6 +289,16 @@ table {
   margin-bottom: 2rem;
 }
 
+#offers-page .thank-you h1 {
+  text-align: center;
+}
+
+#offers-page .thank-you p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 #offers-page form .form-group label {
   font-weight: 700;
   margin-bottom: 10px;

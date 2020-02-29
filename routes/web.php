@@ -60,6 +60,20 @@ Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
 Route::put('/admin/users/{id}', 'admin\UsersController@update');
 Route::delete('/admin/users/{id}/delete', 'admin\UsersController@delete');
 
+// Admin Settings
+
+// General
+Route::get('/admin/settings/general', 'admin\SettingsController@general');
+Route::post('/admin/settings/general', 'admin\SettingsController@saveGeneral');
+
+// Seo
+Route::get('/admin/settings/seo', 'admin\SettingsController@seo');
+Route::post('/admin/settings/seo', 'admin\SettingsController@saveSeo');
+
+// Social Media
+Route::get('/admin/settings/social', 'admin\SettingsController@social');
+Route::post('/admin/settings/social', 'admin\SettingsController@saveSocial');
+
 // Admin Authentication
 Route::get('/admin/register', function () {
     return view('admin/register');

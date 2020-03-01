@@ -64,15 +64,15 @@ Route::delete('/admin/users/{id}/delete', 'admin\UsersController@delete');
 
 // General
 Route::get('/admin/settings/general', 'admin\SettingController@general');
-Route::post('/admin/settings/general', 'admin\SettingController@saveGeneral');
+Route::put('/admin/settings/general', 'admin\SettingController@saveGeneral');
 
 // Seo
 Route::get('/admin/settings/seo', 'admin\SettingController@seo');
-Route::post('/admin/settings/seo', 'admin\SettingController@saveSeo');
+Route::put('/admin/settings/seo', 'admin\SettingController@saveSeo');
 
 // Social Media
 Route::get('/admin/settings/social', 'admin\SettingController@social');
-Route::post('/admin/settings/social', 'admin\SettingController@saveSocial');
+Route::put('/admin/settings/social', 'admin\SettingController@saveSocial');
 
 // Admin Authentication
 Route::get('/admin/register', function () {

@@ -1,12 +1,12 @@
 <div class="side-menu">
     <div class="logo">
         <a href="{{url('/')}}">
-            <img src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-5.png" alt="Logo">
+            <img src="{{$settings["general"]->logo_image_url}}" alt="Logo">
         </a>
     </div>
     <div class="menu">
     <div class="menu-title">
-        Jakes Burgers
+        {{$settings["general"]->site_title}}
     </div>
     <ul class="links">
         <li>
@@ -28,18 +28,18 @@
     </div>
 
     <div class="social-icons">
-    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="{{$settings["social"]->facebook_url}}" target="new"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="{{$settings["social"]->instagram_url}}" target="new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="{{$settings["social"]->twitter_url}}" target="new"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
 
     <div class="location">
     <div class="address">
-        234 Main Street,<br>
-        Surfers Paradise, Gold Coast 4209
+        {{$settings["general"]->address_1}} {{$settings["general"]->address_2}},<br>
+        {{$settings["general"]->city}}, {{$settings["general"]->state}} {{$settings["general"]->zipcode}}
     </div>
     <div class="phone-number">
-        <a href="tel:+61452525251">0452-525-251</a>
+        <a href="tel:{{$settings["general"]->phone_number}}">{{$settings["general"]->phone_number}}</a>
     </div>
     </div>
 </div>

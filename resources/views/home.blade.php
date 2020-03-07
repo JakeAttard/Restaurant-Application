@@ -1,5 +1,9 @@
 @extends('layouts.landing')
 
+@section('title')
+{{$settings["general"]->site_title}} Australia's #1 burgers
+@endsection
+
 @section('content')
 <section id="information">
   <div class="restaurant-image">

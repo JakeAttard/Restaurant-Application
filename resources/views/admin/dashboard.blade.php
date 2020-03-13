@@ -39,7 +39,7 @@
                                     <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
                                 </div>
                             </div>
-                            <div id="sparkline-revenue"></div>
+                            {{-- <div id="sparkline-revenue"></div> --}}
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -53,7 +53,7 @@
                                     <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
                                 </div>
                             </div>
-                            <div id="sparkline-revenue2"></div>
+                            {{-- <div id="sparkline-revenue2"></div> --}}
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -67,7 +67,7 @@
                                     <span>N/A</span>
                                 </div>
                             </div>
-                            <div id="sparkline-revenue3"></div>
+                            {{-- <div id="sparkline-revenue3"></div> --}}
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -81,11 +81,22 @@
                                     <span>-2.00%</span>
                                 </div>
                             </div>
-                            <div id="sparkline-revenue4"></div>
+                            {{-- <div id="sparkline-revenue4"></div> --}}
                         </div>
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <h5 class="card-header"> Total Revenue</h5>
+                            <div class="card-body">
+                                <div id="morris_totalrevenue"></div>
+                            </div>
+                            <div class="card-footer">
+                                <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">$26,000</span><span class="text-success float-right">+9.45%</span></p>
+                            </div>
+                        </div>
+                    </div>
                     <!-- ============================================================== -->
             
                     <!-- ============================================================== -->
@@ -416,18 +427,6 @@
                     <!-- ============================================================== -->
                     <!-- end category revenue  -->
                     <!-- ============================================================== -->
-
-                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <h5 class="card-header"> Total Revenue</h5>
-                            <div class="card-body">
-                                <div id="morris_totalrevenue"></div>
-                            </div>
-                            <div class="card-footer">
-                                <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">$26,000</span><span class="text-success float-right">+9.45%</span></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">

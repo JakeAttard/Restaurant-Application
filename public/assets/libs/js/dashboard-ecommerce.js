@@ -199,27 +199,20 @@
     // ============================================================== 
     // Total Revenue
     // ============================================================== 
-    Morris.Area({
-        element: 'morris_totalrevenue',
-        behaveLikeLine: true,
-        data: [
-            { x: '2020-01-01', y: 0, },
-            { x: '2020-02-01', y: 7500, },
-            { x: '2020-03-01', y: 15000, },
-            { x: '2020-04-01', y: 22500, },
-            { x: '2020-05-01', y: 30000, },
-            { x: '2020-06-01', y: 40000, }
-        ],
-        xkey: 'x',
-        ykeys: ['y'],
-        labels: ['Y'],
-        lineColors: ['#5969ff'],
-        resize: true
-
+    $.get("/admin/estimated-revenue-daily", function(data) {
+        console.log(data)
+        Morris.Area({
+            element: 'morris_totalrevenue',
+            behaveLikeLine: true,
+            data: data,
+            xkey: 'x',
+            ykeys: ['y'],
+            labels: ['Y'],
+            lineColors: ['#5969ff'],
+            resize: true
+    
+        });
     });
-
-
-
 
     // ============================================================== 
     // Revenue By Categories

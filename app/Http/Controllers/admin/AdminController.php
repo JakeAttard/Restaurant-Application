@@ -33,11 +33,14 @@ class AdminController extends Controller
            SELECT count(*) as total FROM users inner join role_user on role_user.user_id = users.id inner join roles on roles.id = role_user.role_id where role_id = 2
         '));
 
+        $latestReservations = Reservation::where('guests_total', '>', 0)->limit(5)->orderBy('created_at', 'desc')->get();
+    
         return view('admin/dashboard', [
             "estimated_income_last_30" => $estimated_income_last_30[0]->total,
             "total_customers_last_30" => $total_customers_last_30[0]->total,
             "total_reservations_last_30" => $total_reservations_last_30[0]->total,
-            "total_employees" => $total_employees[0]->total
+            "total_employees" => $total_employees[0]->total,
+            "latestReservations" => $latestReservations
         ]);
     }
 

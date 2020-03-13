@@ -1,5 +1,23 @@
- 
+    // ============================================================== 
+    // Total Revenue
+    // ============================================================== 
+    $.get("/admin/estimated-revenue-daily", function(data) {
+        console.log(data)
+        Morris.Area({
+            element: 'morris_totalrevenue',
+            behaveLikeLine: true,
+            data: data,
+            xkey: 'x',
+            ykeys: ['y'],
+            labels: ['Y'],
+            lineColors: ['#5969ff'],
+            resize: true
     
+        });
+    });
+
+
+    // Havent used:
     $(function() {
         "use strict";
         // ============================================================== 
@@ -190,28 +208,6 @@
         highlightSpotColor: undefined,
         highlightLineColor: undefined,
         resize: true,
-    });
-
-
-
-
-
-    // ============================================================== 
-    // Total Revenue
-    // ============================================================== 
-    $.get("/admin/estimated-revenue-daily", function(data) {
-        console.log(data)
-        Morris.Area({
-            element: 'morris_totalrevenue',
-            behaveLikeLine: true,
-            data: data,
-            xkey: 'x',
-            ykeys: ['y'],
-            labels: ['Y'],
-            lineColors: ['#5969ff'],
-            resize: true
-    
-        });
     });
 
     // ============================================================== 

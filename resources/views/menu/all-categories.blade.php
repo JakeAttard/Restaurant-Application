@@ -22,7 +22,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="food-title">
-                    {{$category->title}}
+                    {{ucwords($category->title)}}
                   </div>
                   <p class="food-description">
                     {{$category->description}}
